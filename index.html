@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .datetime {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .message {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .bill-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .bill-container h2 {
+            text-align: center;
+        }
+        .bill-container p {
+            margin: 10px 0;
+        }
+    </style>
+    </head>
+<body>
+<div class="datetime" id="datetime"></div>
+<div class="message" id="message"></div
+    <div class="bill-container">
+        <h2>K-Electric Bill</h2>
+        <p id="customer-name"></p>
+        <p id="current-month"></p>
+        <p id="number-of-units"></p>
+        <p id="charges-per-unit"></p>
+        <p id="net-amount-payable"></p>
+        <p id="late-payment-surcharge"></p>
+        <p id="gross-amount-payable"></p>
+    </div>
+
+    <h1>Counting Display</h1>
+    
+    <label for="startNumber">Start Number:</label>
+    <input type="number" id="startNumber" value="1">
+    
+    <label for="endNumber">End Number:</label>
+    <input type="number" id="endNumber" value="10">
+    
+    <button onclick="displayCounting()">Display Counting</button>
+    
+    <div id="countingDisplay"></div>
+
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1">
+    
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2">
+    
+    <label for="operator">Operator:</label>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    
+    <button onclick="compute()">Compute</button>
+    
+    <div id="result"></div>
+
+    <h1>Add Two Numbers</h1>
+    
+    <label for="number1">Number 1:</label>
+    <input type="number" id="number1">
+    
+    <label for="number2">Number 2:</label>
+    <input type="number" id="number2">
+    
+    <button onclick="addNumbers()">Add</button>
+    
+    <div id="result"></div>
+
+
+    <h1>Greeting Application</h1>
+    
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName">
+    
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName">
+    
+    <button onclick="greetUser()">Greet</button>
+    
+    <div id="greeting"></div>
+
+
+
+</html>
